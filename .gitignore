@@ -1,0 +1,52 @@
+# JetBrains software
+.idea/
+*.iml
+
+# Gradle cache & gradle wrapper
+.gradle/
+gradle/
+gradlew.bat
+gradle.sh
+gradlew
+gradle/
+# Compile results
+build/
+out/
+
+# Builded Front-End in gateway service
+/back-end/gateway-service/src/main/resources/static/
+
+# keep your passwords away from git
+credentials.yml
+
+# logs
+log/
+*.log
+
+# Browser data
+~/
+
+# DB files
+data/
+sql_dump/
+
+# Uploaded files
+storage_rep/
+uploads/
+
+# SonarQube reports
+.scannerwork/
+
+# npm
+node_modules/
+/front-end/dist/
+/front-end/coverage/
+package-lock.json
+
+# Visual Studio Code
+.vscode
+
+# PEM-encoded keys
+#*.pem
+# DER-encoded keys
+#*.der
