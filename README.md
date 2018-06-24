@@ -1,5 +1,3 @@
-Pavel Sergeev 22.06.2018:
-
 маленькое приложение
 
 в которой будет
@@ -17,7 +15,3 @@ Pavel Sergeev 22.06.2018:
 index.html, script.js, model.json
 вот всего 3 файла, хотя нет еще будет form.xml
 
-http://www.techippo.com/2015/09/consume-odata-service-from-sapui5_23.html
-http://www.odata.org/
-https://openui5.hana.ondemand.com/#/topic
-https://open.sap.com/courses/ui51

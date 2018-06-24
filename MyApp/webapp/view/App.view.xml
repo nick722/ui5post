@@ -4,10 +4,18 @@
   xmlns="sap.m"
   controllerName="opensap.myapp.controller.App"
 >
-  <Button text="Say Hello" press="onShowHello"/>
-  <Input
-    value="{helloPanel>/recipient/name}"
-    description="Hello {helloPanel>/recipient/name}"
-    valueLiveUpdate="true"
-    width="60%"/>
+        <Input
+          value="{helloPanel>/FirstName}"
+          description="{helloPanel>/FirstName}"
+          valueLiveUpdate="true"
+          width="60%"/>
+        <Input
+          value="{helloPanel>/LastName}"
+          description="{helloPanel>/LastName}"
+          valueLiveUpdate="true"
+          width="60%"/>
+
+        <Button text="Say Hello" press="onShowHello"/>
+        <Button text="Save" press="onSave"/>
+
 </mvc:View>
