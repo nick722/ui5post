@@ -5,17 +5,11 @@
   controllerName="opensap.myapp.controller.App"
 >
         <Input
-          value="{helloPanel>/FirstName}"
-          description="{helloPanel>/FirstName}"
-          valueLiveUpdate="true"
+          value="{model>/FirstName}"
           width="60%"/>
         <Input
-          value="{helloPanel>/LastName}"
-          description="{helloPanel>/LastName}"
-          valueLiveUpdate="true"
+          value="{model>/LastName}"
           width="60%"/>
-
-        <Button text="Say Hello" press="onShowHello"/>
         <Button text="Save" press="onSave"/>
 
 </mvc:View>

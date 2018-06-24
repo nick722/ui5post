@@ -45,9 +45,9 @@
             }
         },
         "models": {
-            "helloPanel": {
+            "model": {
                 "type": "sap.ui.model.json.JSONModel",
-                "uri": "model/HelloPanel.json"
+                "uri": "model/model.json"
             }
         },
 
