@@ -5,9 +5,11 @@
   controllerName="opensap.myapp.controller.App"
 >
         <Input
+          id="FirstName"
           value="{model>/FirstName}"
           width="60%"/>
         <Input
+          id="LastName"
           value="{model>/LastName}"
           width="60%"/>
         <Button text="Save" press="onSave"/>

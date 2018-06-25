@@ -16,5 +16,5 @@ index.html, script.js, model.json
 вот всего 3 файла, хотя нет еще будет form.xml
 
 Test Servers:
-https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc
-http://services.odata.org/TripPinRESTierService/
+https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc (from here: https://archive.sap.com/discussions/thread/3917197)
+http://services.odata.org/TripPinRESTierService/ (Response: 302)
