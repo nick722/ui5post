@@ -9,20 +9,14 @@ sap.ui.define(
             onSave: function () {
 
                 console.log('onSave works');
-                var oModel = new sap.ui.model.odata.v2.ODataModel("http://services.odata.org/Northwind/Northwind.svc/");
-
-                // var oEntry = {};
-                // oEntry.Carrid = "AFO";
-                // oEntry.Carrname = "Airforce One";
-                // oEntry.Currcode = "USD";
-                // oEntry.Url = "www.techippo.com";
+                var oModel = new sap.ui.model.odata.v2.ODataModel("https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc");
 
                 var oData = {
-                    ProductId: 999,
-                    ProductName: "myProduct"
+                    ProductId: 2506182051,
+                    ProductName: "Piper"
                 }
 
-                oModel.create("/Products", oData, {
+                oModel.create("/Person", oData, {
                     method: "POST",
                     success: function(data) {
                         console.log('POST request success' + JSON.stringify(data));

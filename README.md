@@ -15,3 +15,6 @@
 index.html, script.js, model.json
 вот всего 3 файла, хотя нет еще будет form.xml
 
+Test Servers:
+https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc
+http://services.odata.org/TripPinRESTierService/
