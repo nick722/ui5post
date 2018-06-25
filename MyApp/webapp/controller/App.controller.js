@@ -8,23 +8,27 @@ sap.ui.define(
 
             onSave: function () {
 
-                $.ajax({
-                    type: "POST",
+                console.log('onSave works');
+                var oModel = new sap.ui.model.odata.v2.ODataModel("http://services.odata.org/Northwind/Northwind.svc/");
 
-                    url: 'proxy/http/services.odata.org/V3/(S(javsoqela2hqsduwyhasapr2))/OData/OData.svc/Products',
-                    dataType: "json",
-                    // data: JSON.stringify(oEntry),
-                    data: "POST CONTENT DATA",
-                    contentType: "application/json" ,
-                    success: function() {
-                        sap.m.MessageToast.show("Product Added Successfully");
-                        oCreateDialog.close();
-                        sap.ui.getCore().byId("table").getModel().refresh(true);
+                // var oEntry = {};
+                // oEntry.Carrid = "AFO";
+                // oEntry.Carrname = "Airforce One";
+                // oEntry.Currcode = "USD";
+                // oEntry.Url = "www.techippo.com";
 
+                var oData = {
+                    ProductId: 999,
+                    ProductName: "myProduct"
+                }
+
+                oModel.create("/Products", oData, {
+                    method: "POST",
+                    success: function(data) {
+                        console.log('POST request success' + JSON.stringify(data));
                     },
-
                     error: function() {
-                        new sap.m.MessageToast.show("Error while adding the product");
+                        console.log('POST request error');
                     }
                 });
             },
